@@ -1,0 +1,159 @@
+﻿body {
+    background: #1c1d22;
+    padding: 50px 0 0 25px;
+}
+
+.navbar-default {
+    border: none;
+    background: #365d98;
+    margin-bottom: 100px;
+}
+
+section {
+    color: #efecec;
+    padding-top: 25px;
+    font-family: 'Muli', sans-serif;
+}
+
+section h3 {
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: -5px;
+}
+
+.taskList li{
+    font-size: 18px;
+    display:  inline;
+    list-style-type: none;
+    margin: 0 50px 0 0;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+article img {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 30px;
+}
+
+.label {
+    font-size: 12px;
+    color: #8e8a8a;
+}
+
+aside {
+    margin-bottom: 30px;
+}
+
+.main {
+    background: #efecec;
+    padding: 0px;
+    margin: 0px;
+  -moz-box-shadow:    1px 3px 5px 6px #000;
+  -webkit-box-shadow: 1px 3px 5px 6px #000;
+  box-shadow:         1px 3px 5px 6px #000;
+}
+
+.imageContain{
+    display: block;
+    height: 350px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0px;
+}
+
+.imageContain img {
+    min-width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    bottom: initial;
+}
+
+.whoPosted {
+    padding: 15px;
+    background: #365d98;
+    margin: 0 0 0 0;
+}
+
+.tweet {
+    color: #2f4b74;
+    padding: 0;
+    font-size: 18px;
+}
+
+.tweet img {
+    height: 100%;
+    border-radius: 10px;
+  border: 3px solid #4b4949;
+}
+
+.entireTweet p{
+    margin-bottom: 0px;
+}
+
+hr { display: block; height: 1px;
+    border: 0; border-top: 1px solid #4b4949;
+    margin: 1em 0; padding: 0; }
+
+#Brand {
+    font-size: 20px;
+    font-weight: bold;
+    color: #efecec;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.logoInfo {
+    padding: 12px;
+    background: #171717;
+    margin-left: -50px;
+}
+
+.imageContain h2 {
+   position: absolute; 
+   top: 200px; 
+   left: 0; 
+   width: 100%; 
+}
+
+.imageContain h2 span {
+    color: white; 
+     font-family: 'Ubuntu', sans-serif;
+     font-size: 36px;
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px;
+}
+
+h2 span.spacer {
+   padding:0 5px;
+}
+
+.Photos div img {
+    width: 100%;
+    height: auto;
+}
+
+.tweetImg {
+    margin-left: 250px;
+    width: 35%;
+    height: auto;
+}
+
+.btn-warning {
+    background-color: #8e8a8a;
+    border-color: #efecec;
+}
+
+.btn-warning:hover {
+    background-color: #d3cfcf;
+    border-color: #eeeaea;
+    color: #4b4949;
+}
+
+.btn-danger {
+    background-color: #8e1010;
+    border-color: #550707;
+}

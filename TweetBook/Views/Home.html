@@ -1,0 +1,32 @@
+﻿<article class="main col-md-10">
+    <div class="imageContain col-md-12">
+
+        <img src="http://upload.wikimedia.org/wikipedia/commons/4/44/Panoramic_Houston_skyline.jpg" />
+        <h2><span>Write On<span class='spacer'></span><br /><br /><span class='spacer'></span>Your Wall</span></h2>
+    </div>
+    <article ng-repeat="tweet in Tweets | orderBy: '-time'">
+        <div class="entireTweet">
+            <header class="whoPosted col-md-12">
+                <h4 class="col-md-10">{{tweet.userName}}<small>{{tweet.time| date : medium}}</small></h4>
+                <div ng-if="!tweet.mine">
+                    <button type="button" class="glyphicon glyphicon-star btn btn-default" ng-click="Favorite(tweet)"></button>
+                </div>
+                
+                <div ng-if="tweet.mine">
+                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal" ng-click="SetupEdit(tweet)">Edit</button>
+                    <button type="button" class="btn btn-danger" ng-click="DeleteTweet(tweet)">Delete</button>
+                </div>
+            </header>
+            <p class="tweet">
+                <img ng-src="{{tweet.pictureUrl}}" />
+      
+                {{tweet.message}}
+                <div class=""ng-if="tweet.image">
+                    <img class="tweetImg" ng-src="{{tweet.image}}"/>
+                </div>
+                <textarea class="form-control" placeholder="Comment.."></textarea>
+            </p>
+            
+        </div>
+    </article>
+</article>

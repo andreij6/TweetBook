@@ -1,0 +1,19 @@
+﻿<article class="main col-md-10">
+    <div class="imageContain col-md-12">
+        
+        <img src="http://upload.wikimedia.org/wikipedia/commons/4/44/Panoramic_Houston_skyline.jpg" />
+        <h2><span>Favorit Tweets<span class='spacer'></span></h2>
+    </div>
+    <article ng-repeat="tweet in favorites | orderBy: '-time'">
+        <div class="entireTweet">
+            <header class="whoPosted col-md-12">
+                <h4 class="col-md-10">{{tweet.userName}} <small>{{tweet.time | date : medium}}</small></h4>
+            </header>
+            <p class="tweet">
+                <img ng-src="{{tweet.pictureUrl}}" />
+                {{tweet.message}}
+            </p>
+
+        </div>
+    </article>
+</article>

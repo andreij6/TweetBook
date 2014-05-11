@@ -1,0 +1,12 @@
+﻿<article class="main col-md-10">
+    <header class="container">
+        <h1 style="color: #464343">Photos</h1>
+        <input type="text" placeholder="Add a new Image.." class="col-md-12" id="newPhoto" ng-model="image.url"/><br />
+        <button type="button" class="btn btn-primary" ng-click="postImage(image)">Add Photo</button>
+    </header>
+    <section class="Photos" ng-repeat="photo in photos | orderBy: '-time'">
+        <div class="col-md-4 pull-left photoGallery">
+            <img ng-src="{{photo.url}}" />
+        </div>
+    </section>
+</article>
